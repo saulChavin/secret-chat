@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useStore } from '../src/store/useStore';
-import { SignUpForm } from '../src/components/SignUpForm';
+import { useStore } from '../store/useStore';
+import { SignUpForm } from '../components/SignUpForm';
 
 const Home: NextPage = () => {
 

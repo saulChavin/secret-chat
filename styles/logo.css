@@ -1,0 +1,27 @@
+
+.logo {
+    text-align: center;
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 84px;
+}
+
+svg.logo {
+    margin: 0 auto;
+    margin-top: 36px;
+
+}
+
+.logo::before {
+    content: 'Welcome!';
+    color: #2563EB;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 36px;
+    line-height: 54px;
+}
+
+.logo::after {
+    content: 'ChatRoom';
+    color: #3B82F6;
+}

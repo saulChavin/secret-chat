@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import { useStore, useConversationStore } from '../../src/store/useStore';
-import { Conversation } from '../../src/components/Conversation';
-import { SendMessageInput } from '../../src/components/SendMessageInput';
+import { useStore, useConversationStore } from '../../store/useStore';
+import { Conversation } from '../../components/Conversation';
+import { SendMessageInput } from '../../components/SendMessageInput';
 import { useRouter } from 'next/router';
-import { getAccessToken } from '../../src/services/user';
+import { getAccessToken } from '../../services/user';
 import Link from 'next/link';
 
 const Room = () => {

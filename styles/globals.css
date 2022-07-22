@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom Variables */
 :root {
     --primary-color: rgb(140, 0, 255);
-    --secondary-color: #0e0e0e
+    --secondary-color: #D4D4D8;
+    --surface-color: #FFF;
   }
   
   /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
@@ -51,4 +51,5 @@
   select {
     --tw-border-color: var(--secondary-color);
     border-color: var(--secondary-color);
+    background-color: var(--surface-color);
   }

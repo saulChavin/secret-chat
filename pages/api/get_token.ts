@@ -1,5 +1,5 @@
 import twilio from 'twilio';
-import { supabase } from '../../src/utils/subabaseClient';
+import { supabase } from '../../utils/subabaseClient';
 
 const VITE_PUBLIC_TWILIO_ACCOUNT_SID = process.env.VITE_PUBLIC_TWILIO_ACCOUNT_SID
 const VITE_PUBLIC_TWILIO_API_KEY = process.env.VITE_PUBLIC_TWILIO_API_KEY
@@ -30,6 +30,9 @@ export default async function handler(
   //   : null
 
   const user = await supabase.auth.api.getUser(jwt)
+  const usesr =  supabase.storage
+  console.log('usesr', usesr)
+
   const identity = user?.data?.user_metadata.userName
 
   if (identity == null) return res.status(401).json('not Allowed')

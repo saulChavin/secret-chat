@@ -31,8 +31,8 @@ export const ConversationsList = () => {
   return (
     <ul>
       {conversationList?.items?.map(({ channelState: { uniqueName = '' } = {} }: any) => (
-        <li>
-          <Link href={`/room/${uniqueName}`} key={uniqueName}>{uniqueName}</Link>
+        <li key={uniqueName}>
+          <Link href={`/room/${uniqueName}`} >{uniqueName}</Link>
         </li>
       ))}
     </ul>
