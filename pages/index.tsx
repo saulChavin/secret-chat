@@ -4,6 +4,7 @@ import { useStore } from '../store/useStore';
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import Link from 'next/link';
+import { Button, Tabs } from 'flowbite-react';
 
 const RoomSelection = dynamic(() => import('../components/RoomSelection'), {
   ssr: false,
@@ -27,8 +28,22 @@ const Home: NextPage = () => {
 
       <UserHeader />
       {user &&
-        <RoomSelection />
+        <div className='flex flex-col items-center mt-4 mx-4'>
+          <Button.Group>
+            <Button color="gray">
+              {' '}Profile
+            </Button>
+            <Button color="gray">
+              {' '}Settings
+            </Button>
+            <Button color="gray">
+              {' '}Messages
+            </Button>
+          </Button.Group>
+          <RoomSelection />
+        </div>
       }
+
 
     </>
   )
