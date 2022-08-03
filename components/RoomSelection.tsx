@@ -32,7 +32,7 @@ const RoomSelection = () => {
 
     useEffect(() => {
         setActiveConversation(null); //null conversation on mount
-    }, [])
+    }, [setActiveConversation])
 
     return (
         <>

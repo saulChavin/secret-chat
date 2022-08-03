@@ -23,7 +23,7 @@ const Room = () => {
                     })
             }
         }
-    }, [isReady])
+    }, [isReady, activeConversation, getConversation, query, user?.token])
 
     if (!activeConversation) return (<>Recuperando conversation</>)
 

@@ -31,7 +31,7 @@ export const CreateRoomForm = () => {
 
     useEffect(() => {
         setActiveConversation(null); //null conversation on mount
-    }, [])
+    }, [setActiveConversation])
 
     return (
         <button className='inline-flex items-center p-0 mt-8 gap-4 self-start'>
