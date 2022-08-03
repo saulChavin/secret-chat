@@ -22,7 +22,7 @@ export const Conversation = () => {
             }
         }
         loadMessages();
-    }, []);
+    }, [activeConversation]);
 
     return (
         <div>
