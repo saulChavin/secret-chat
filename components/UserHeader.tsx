@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useFormik } from 'formik'
 import { supabase } from '../utils/subabaseClient';
 import validationSchema from '../schema/SignInSchema'
-import Logo from './Logo';
+import Logo from '../assets/Logo';
 import { useStore } from '../store/useStore';
 import { LoggedUserHead } from './LoggedUserHead';
 import Link from 'next/link';
@@ -70,7 +70,7 @@ const LoginForm = () => {
   return (
     <div className='flex flex-col justify-between h-full'>
       <span className='logo' >
-        <Logo />
+        <Logo className='logo'/>
       </span>
 
       <form className='flex-1 w-72' onSubmit={handleSubmit}>
