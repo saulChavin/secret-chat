@@ -34,7 +34,7 @@ export const ConversationsList = () => {
       {conversationList?.items?.map(({ channelState: { uniqueName = '' } = {} }: any) => (
         <li key={uniqueName} className='flex flex-col '>
           <button className='inline-flex p-0 gap-4 mt-3  items-center'>
-            <Image alt={uniqueName} src={`https://i.pravatar.cc/150?u=${uniqueName}`} className='w-14 rounded-full border-2 border-blue-500' />
+            <img alt={uniqueName} src={`https://i.pravatar.cc/150?u=${uniqueName}`} className='w-14 rounded-full border-2 border-blue-500' />
             <Link href={`/room/${uniqueName}`} >{uniqueName}</Link>
           </button>
 

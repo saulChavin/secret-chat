@@ -1,7 +1,7 @@
 
 
 export const getAccessToken = async ({token}: {token: string}) => {
-    const res = await fetch('http://localhost:3000/api/get_token', {
+    const res = await fetch('/api/get_token', {
       headers: {
         jwt: token
       }
